@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/khanm1/bamazom/issues"
   },
-  "homepage": "https://github.com/khanm1/bamazom#readme"
+  "homepage": "https://github.com/khanm1/bamazom#readme",
+  "dependencies": {
+    "dotenv": "^6.2.0",
+    "inquirer": "^6.2.1",
+    "mysql": "^2.16.0"
+  }
 }
