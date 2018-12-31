@@ -65,6 +65,7 @@ function start(){
                         console.log(chalk.red("INSUFFICIENT QUANTITY PLEASE TRY AGAIN"));
                         askAgain();
                         //connection.end();
+                        
                     }else{
                         updateQuantity(response.choiceID, numQuantity,
                         data.stock_quantity, data.price, data.product_name);
