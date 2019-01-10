@@ -1,9 +1,7 @@
 # bamazon
 An amazon-like storefront using MySQL and Node.js
 
-
 ## bamazonCustomer.js Application
-The first part of the video above demonstrates this application.
 This application shows the user a list of items from a database. The list of items
 includes the item id, item name and price of each item. The user then selects the item id
 he or she wishes to purchase. After selecting the id, the user then chooses the quantity he or she
@@ -11,7 +9,6 @@ wants to buy. At the end, the user is shown how much items they bought and their
 The SQL database is also updated with the new stock quantity as shown in the video.
 
 ## bamazonManager.js Application
-The second part of the video abobe demonstrates this application.
 This application shows the user a list of four commands: View Products for Sale, View Low Inventory,
 Add to Inventory, and Add a New Product.
 
