@@ -1,10 +1,11 @@
-
+// Initializes the npm packages used
 require("dotenv").config();
 var inquirer = require("inquirer");
 var mysql = require("mysql");
 var chalk = require("chalk");
 var asTable = require("as-table");
 
+// Initializes the connection variable to sync with a MySQL database
 var connection = mysql.createConnection({
     host: "localhost",
     port: 3306,
