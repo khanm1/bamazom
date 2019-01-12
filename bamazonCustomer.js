@@ -65,7 +65,7 @@ function start(){
                     if(numQuantity > data.stock_quantity){
                         console.log(chalk.red("INSUFFICIENT QUANTITY PLEASE TRY AGAIN"));
                         askAgain();
-                        //connection.end();
+                        
                         
                     }else{
                         updateQuantity(response.choiceID, numQuantity,
