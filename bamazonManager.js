@@ -10,7 +10,7 @@ var connection = mysql.createConnection(
         host: "localhost",
         port: 3306,
         user: "Mohammad",
-        password: "Password",
+        password: "Rafika112575",
         database: "bamazon"
     }
 );
