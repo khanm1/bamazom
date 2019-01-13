@@ -10,12 +10,12 @@ var connection = mysql.createConnection({
     host: "localhost",
     port: 3306,
     user: "Mohammad",
-    password: "Rafika112575",
+    password: "Password",
     database: "bamazon"
 });
 
 function start(){
-    connection.query("SELECT * FROM products",function(error, result){
+    connection.query("SELECT * FROM products",(error, result) => {
         if (error) throw error;
         var objectArr = [];
         for(var i = 0; i < result.length; i++){
@@ -44,7 +44,7 @@ function start(){
             {
                 type: "input",
                 message: chalk.yellow("How many would you like to buy?"),
-                validate: function(value){
+                validate: (value) => {
                     if(isNaN(value) === false){
                         return true;
                     }
@@ -59,7 +59,7 @@ function start(){
                 {
                     item_id: response.choiceID
                 },
-                function(error, selected){
+                (error, selected) => {
                     if (error) throw error;
                     var data = selected[0];
                     if(numQuantity > data.stock_quantity){
@@ -87,7 +87,7 @@ function updateQuantity(userChoiceId, userQuantity,
             {
                 item_id: userChoiceId
             }
-        ],function(error){
+        ],(error)=> {
             if(error) throw error;
             var total = parseFloat(itemPrice) * userQuantity;
 
@@ -101,6 +101,7 @@ function updateQuantity(userChoiceId, userQuantity,
             askAgain();
         })
 }
+// Ask user do they want to buy another item.
 function askAgain(){
     inquirer.prompt([
         {
