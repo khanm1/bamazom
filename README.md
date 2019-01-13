@@ -4,7 +4,7 @@ An amazon-like storefront using MySQL and Node.js
 ## bamazonCustomer.js Application
 This application shows the user a list of items from a database. The list of items
 includes the item id, item name and price of each item. The user then selects the item id
-they wishes to purchase. After selecting the id, the user then chooses the quantity they
+they wishes to purchase. After selecting the id, the user can choose the quantity they
 wants to buy. At the end, the user is shown how much items they bought and their total cost.
 The SQL database is also updated with the new stock quantity.
 
@@ -20,7 +20,7 @@ Shows the user a list of the products that have a stock_quantity lower then 5. T
 item name and item stock quantity are displayed.
 
 #### Add to Inventory
-The user gets to choose the item id they wants to restock as well as the quantity to add to the stock.
+The user can choose the item id they wants to restock as well as the quantity to add to the stock.
 Once the user chooses these, the application displays the new total stock quantity for the item restocked.
 The SQL database is also updated with the new stock quantity.
 
