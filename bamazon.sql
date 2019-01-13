@@ -6,39 +6,40 @@ USE bamazon;
 
 CREATE TABLE products (
     item_id INT NOT NULL AUTO_INCREMENT,
-    product_name VARCHAR(100) NULL,
-    department_name VARCHAR(100) NULL,
-    price NUMERIC(10,2) NULL,
+    product_name VARCHAR(100) NOT NULL,
+    department_name VARCHAR(100) NOT NULL,
+    price NUMERIC(10,2) NOT NULL,
     stock_quantity INT NULL,
     PRIMARY KEY(item_id)
 );
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUES ("Banana", "Produce", 0.59, 30);
+VALUES ("Milk", "Dairy", 2.19, 25;
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUES ("Apple", "Produce", 0.45, 50);
+VALUES ("Egg", "Dairy", 1.45, 40);
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUES ("Milk", "Dairy", 2.00, 20);
+VALUES ("Yogurt", "Dairy", 1.59, 25);
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUES ("Cheese", "Dairy", 1.00, 15);
+VALUES ("Cheese", "Dairy", 1.99, 20);
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUES ("Bread", "Grains", 1.25, 40);
+VALUES ("Apple", "Produce", .99, 40);
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUES ("Cereal", "Grains", 1.80, 10);
+VALUES ("Banana", "Produce", .49, 50);
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUES ("Pasta", "Grains", 2.20, 13);
+VALUES ("Oragne", "Produce", .69, 25);
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUES ("Eggs", "Dairy", 1.00, 16);
+VALUES ("Peach", "Produce", 1.00, 20);
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUES ("Ketchup", "Condiments", 0.80, 80);
+VALUES ("Bread", "Grocery", 1.99, 20);
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUES ("Broccoli", "Produce", 1.50, 30);
+VALUES ("Cereal", "Grocery", 2.49, 25);
+
